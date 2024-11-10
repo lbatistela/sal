@@ -1822,7 +1822,7 @@ DOMContentLoaded.addEventOrExecute(() => {
     {# /* // Secondary image on mouseover */ #}
     
     {% if settings.product_hover %}
-        if (window.innerWidth > 767) {
+//        if (window.innerWidth > 767) {
             jQueryNuvem(document).on("mouseover", ".js-item-with-secondary-image:not(.item-with-two-images)", function(e) {
                 var secondary_image_to_show = jQueryNuvem(this).find(".js-item-image-secondary");
                 secondary_image_to_show.show();
@@ -1830,7 +1830,7 @@ DOMContentLoaded.addEventOrExecute(() => {
                     jQueryNuvem(e.currentTarget).closest(".js-item-with-secondary-image").addClass("item-with-two-images");
                 });
             });
-        }
+//        }
     {% endif %}
 
     var nav_height = jQueryNuvem(".js-head-main").innerHeight();
